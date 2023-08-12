@@ -20,7 +20,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php for($i = 1; $i < count($data); $i++): ?>
+                        <?php for($i = 0; $i < count($data); $i++): ?>
                             <tr>
                                 <?php for($j = 0;$j < count($header); $j++): ?>
                                     <td><?= $data[$i][$j] ?? "Desconhecido"?></td>

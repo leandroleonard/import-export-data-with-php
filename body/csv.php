@@ -21,7 +21,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php for($i = 1; $i < count($data); $i++): ?>
+                        <?php for($i = 0; $i < count($data); $i++): ?>
                             <tr>
                                 <td><?= $data[$i][0] ?? "Desconhecido"?></td>
                                 <td><?= $data[$i][1] ?? "Desconhecido"?></td>
