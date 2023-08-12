@@ -14,19 +14,17 @@
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Name</th>
-                            <th>Age</th>
-                            <th>City</th>
-                            <th>Occupation</th>
+                            <?php foreach($header as $column): ?>
+                                <th><?= $column ?></th>
+                            <?php endforeach ?>
                         </tr>
                     </thead>
                     <tbody>
                         <?php for($i = 1; $i < count($data); $i++): ?>
                             <tr>
-                                <td><?= $data[$i][0] ?? "Desconhecido"?></td>
-                                <td><?= $data[$i][1] ?? "Desconhecido"?></td>
-                                <td><?= $data[$i][2] ?? "Desconhecido"?></td>
-                                <td><?= $data[$i][3] ?? "Desconhecido"?></td>
+                                <?php for($j = 0;$j < count($header); $j++): ?>
+                                    <td><?= $data[$i][$j] ?? "Desconhecido"?></td>
+                                <?php endfor ?>
                             </tr>
                         <?php endfor ?>
                     </tbody>

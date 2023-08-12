@@ -6,12 +6,15 @@
 
             $data_in_file = fopen($file['tmp_name'], 'r');
 
+            $header = fgetcsv($data_in_file, 100, ';');
+
             $data = [];
             while($row = fgetcsv($data_in_file, 1000, ';')){
                 array_push($data, $row);
             }
-
-            include_once "../body/csv.php";
+            // echo "<pre>";
+            // print_r($header);
+            include_once "../body/unknown-csv.php";
         }else{
             echo('You must select a csv file to process data');
         }

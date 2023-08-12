@@ -1,5 +1,5 @@
-Name,Age,City,Occupation
-John,30,São Paulo,Engineer
-Maria,25,Rio de Janeiro,Designer
-Eddy,40,Belo Horizonte,Professor
-Ana,28,Porto Alegre,Lawyer
+Name;Age;City;Occupation
+John;30;São Paulo;Engineer
+Maria;25;Rio de Janeiro;Designer
+Eddy;40;Belo Horizonte;Professor
+Ana;28;Porto Alegre;Lawyer
